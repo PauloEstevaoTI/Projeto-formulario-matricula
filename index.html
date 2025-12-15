@@ -24,7 +24,67 @@
 
           <h2>Formulário de matrícula</h2>
           <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>             
-      </div>
+          
+        <form action="" method="post" enctype="multipart/form-data">
+          <div class="info-criancas form">
+            <fieldset>
+              <legend><h3>Informações da criança</h3></legend>
+           
+            <div class="input-wrapper">
+              <label for="fullname">Nome completo</label>
+              <input 
+                type="text" 
+                id="fullname"
+                name="fullname"
+                placeholder="Digite o nome completo" 
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="bitrh">Data de nascimento</label>
+              <input 
+                type="date" 
+                id="birth"
+                name="birth"
+                lang="pt-BR"
+              />
+            </div>
+           
+            <div class="input-wrapper">
+              <label for="gender" >Sexo</label>
+              <select id="sexo" name="sexo">
+                <option value="" disabled selected>Selecione o sexo</option>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+                <option value="na">Prefiro não responder</option>
+              </select>
+            </div>           
+
+            <div class="textarea-wrapper">
+              <label for="medical-info">Informações médicas</label>
+              <textarea 
+                id="medical-info" 
+                name="medical-info" 
+                placeholder="Descreva qualquer informação médica relevante"
+                cols="30"
+                rows="10"
+                >
+              </textarea> 
+            </div>
+            
+            <div class="droparea-wrapper">
+              <label for="certidao">Certidão de nascimento</label>
+              <input type="file" id="certidao" name="certidao" />
+              <img src="assets/icons/cloud-upload.svg" alt="" />
+              <p>
+                Clique aqui para <br>
+                selecionar o arquivo
+              </p>
+            </div>  
+            </fieldset>         
+          </div>
+        </form>
+        </div>
       </main>
       <aside>
         <div class="aside-container">
@@ -35,8 +95,9 @@
             </h1>
             <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
           </header>
-          <img src="assets/Illustration.svg" alt="Ilustração de crianças brincando">
+          <img src="assets/Illustration.svg" alt="Ilustração de crianças brincando">         
         </div>
+      
     </div>
   </body>
 </html>
