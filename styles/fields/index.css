@@ -49,3 +49,22 @@ select {
   background: url("../../../assets/icons/arrow-down-01.svg") no-repeat;
   background-position: right 1.6rem center;
 }
+
+.address .flex {
+  gap: 2rem;
+}
+
+.input-wrapper:has([disabled]) {
+  opacity: 0.5;
+}
+
+input {
+  &[disabled] {
+    background-color: var(--surface-disabled);
+    cursor: not-allowed;
+
+    border: 1px solid var(--stroke-default);
+
+    color: var(--text-primary);
+  }
+}
