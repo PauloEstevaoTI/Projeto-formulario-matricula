@@ -78,7 +78,7 @@ main {
   gap: 4.8rem;
 }
 
-.form {
+/* .form {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -88,4 +88,4 @@ form {
   label {
     margin-bottom: 4px;
   }
-}
+} */
