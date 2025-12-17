@@ -145,7 +145,70 @@
                 </div>
               </div>
 
-            </fieldset> 
+            </fieldset>
+            <fieldset class="guardian">
+              <legend>Informações do responsável</legend>
+              <div class="input-wrapper">
+                <label for="guardian-name">Nome do responsável</label>
+                <input 
+                  type="text" 
+                  id="guardian-name"
+                  name="guardian-name"
+                  placeholder="Digite o nome completo" 
+                />
+                <small>Principal responsável legal e contato de emergência</small>
+              </div>
+              <div class="input-wrapper">
+                <label for="guardian-phone">Telefone</label>
+                <input 
+                  type="tel" 
+                  id="guardian-phone"
+                  name="guardian-phone"
+                  placeholder="(11) 9 9999-9999" 
+                />
+              </div>
+               <div class="input-wrapper">
+                <label for="email">E-mail</label>
+                <input 
+                  type="email" 
+                  id="email"
+                  name="email"
+                  placeholder="papailegal@" 
+                  required
+                />
+                <div class="error">
+                  <img src="./assets/icons/alert-circle.svg" alt="Ícone de erro" />
+                  <span>Insira um e-mail válido.</span>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="registration">
+              <legend><h3>Opções de matrícula</h3></legend>
+              
+              <div class="input-wrapper">
+                <label for="plan">Selecione o turno de estudo</label>   
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                      <input type="radio" id="plan-morning" name="plan" value="morning" />
+                      <label for="plan-morning">Manhã</label>
+                      <img src="assets/icons/sun-cloud-02.svg" alt="Ícone de sol e nuvem" />
+                    </div>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label for="plan">Selecione o turno de estudo</label>   
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                      <input type="radio" id="plan-afternoon" name="plan" value="afternoon" />
+                      <label for="plan-afternoon">Tarde</label>
+                      <img src="assets/icons/sun-cloud-02.svg" alt="Ícone de sol e nuvem" />
+                    </div>
+                </div>
+              </div>
+                      
+            </fieldset>
           </div>
         </form>
         </div>

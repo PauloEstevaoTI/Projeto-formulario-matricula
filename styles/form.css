@@ -18,3 +18,8 @@ legend {
 fieldset + fieldset {
   margin-top: 4.8rem;
 }
+
+fieldset + .options {
+  position: relative;
+  display: flex;
+}
