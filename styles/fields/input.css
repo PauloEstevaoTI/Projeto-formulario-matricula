@@ -1,0 +1,94 @@
+input,
+textarea,
+select {
+  appearance: none;
+  width: 100%;
+  border: 1px solid var(--stroke-default);
+  border-radius: 0.8rem;
+  padding-inline: 1.6rem;
+  padding-block: 1.2rem;
+
+  font: var(--text);
+}
+
+label {
+  font: var(--text-sm);
+  color: var(--text-secondary);
+
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+input[type="date"]:focus-within {
+  outline: 0.4rem solid var(--surface-secondary);
+  border: 0.2rem solid var(--stroke-highlight);
+  outline-offset: 0.1px;
+}
+
+input[type="date"] {
+  position: relative;
+
+  background-image: url("../../../assets/icons/calendar-03.svg");
+  background-repeat: no-repeat;
+  background-position: right 1.6rem center;
+  background-size: 2.4rem;
+}
+
+/* esconde o ícone nativo */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+select {
+  position: relative;
+  background: url("../../../assets/icons/arrow-down-01.svg") no-repeat;
+  background-position: right 1.6rem center;
+}
+
+.address .flex {
+  gap: 2rem;
+}
+
+.input-wrapper:has([disabled]) {
+  opacity: 0.5;
+}
+
+input {
+  &[disabled] {
+    background-color: var(--surface-disabled);
+    cursor: not-allowed;
+
+    border: 1px solid var(--stroke-default);
+
+    color: var(--text-primary);
+  }
+
+  &:invalid {
+    border: 0.2rem solid var(--semantic-error);
+  }
+
+  & + small {
+    font: var(--text-small);
+    color: #78716c;
+    display: inline-block;
+    margin-top: 0.4rem;
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    font: var(--text-small);
+    color: var(--semantic-error);
+
+    margin-top: 0.4rem;
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}
