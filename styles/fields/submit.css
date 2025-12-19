@@ -1,0 +1,38 @@
+.submit-wrapper {
+  margin-top: 4.8rem;
+  display: flex;
+  gap: 1.6rem;
+  justify-content: end;
+
+  & [type="button"] {
+    padding-top: 1.2rem;
+    border: 1px solid var(--text-highlight);
+    color: var(--text-highlight);
+    border-radius: 0.8rem;
+    font: 500 1.6rem/150% var(--font-family);
+    padding-inline: 2.4rem;
+    padding-block: 1.2rem;
+    background: var(--surface--primary);
+    cursor: pointer;
+  }
+
+  & [type="button"]:hover {
+    outline: 0.4rem solid var(--surface-secondary);
+  }
+
+  & [type="submit"] {
+    padding-top: 1.2rem;
+    border: none;
+    color: #fff;
+    border-radius: 0.8rem;
+    font: 500 1.6rem/150% var(--font-family);
+    padding-inline: 2.4rem;
+    padding-block: 1.2rem;
+    background: var(--color-brand-dark);
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  & [type="submit"]:hover {
+    background: var(--color-brand-mid);
+  }
+}
